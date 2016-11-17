@@ -1,23 +1,107 @@
 
-/* I use flexbox here to align the central div. */
-/* In the case of IE11 support being critical, I would use CSS positioning as I've done in the commented code. */
-
 html {
 	height: 100%;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-/*	position: relative;*/
+	position: relative;
+}
+
+a {
+	text-decoration: none;
 }
 
 .main {
+	font-family: 'Arial', sans-serif;
 	height: 400px;
 	width: 500px;
 	background-color: white;
-/*	position: absolute;
+	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin: -200px 0 0 -250px;*/
+	margin: -200px 0 0 -250px;
 }
 
+.head {
+	width: 98.5%;
+	font-size: 22px;
+	text-align: right;
+	padding-top: 5px;
+}
+
+#close {
+	color: #808080;
+	cursor: pointer;
+}
+
+#close:hover {
+	color: #999999;
+}
+
+.container {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: stretch;
+	-webkit-align-items: stretch;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+.content {
+	flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+img {
+	height: 125px;
+	width: 150px;
+}
+
+.text {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #4b0532;
+	font-weight: 900;
+}
+
+.foot {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #919191;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+.book {
+	width: 325px;
+	height: 40px;
+	background-color: #4b0532;
+	color: #efefef;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.book:hover {
+	background-color: #42052c;
+}
+
+h2, p {
+	color: #4b0532;
+	margin: 4px;
+	text-align: center;
+	font-weight: lighter;
+}
+
+p {
+	font-size: 13px;
+}
