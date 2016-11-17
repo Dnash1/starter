@@ -1,4 +1,4 @@
 
 function removeIframe() {
-	document.querySelector(".stay-wanderful-iframe").remove();
+	document.querySelector(".stay-wanderful-iframe").style.display="none";
 }
